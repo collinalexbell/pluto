@@ -1,5 +1,6 @@
 from td.client import TDClient
-from accounts import Account
+from account import Account
+from position import Position
 
 class Client:
 
@@ -25,4 +26,16 @@ class Client:
 
         return accounts
 
-                
+    def get_positions(self, act):
+        positions = []
+        response = self.session.get_accounts(act, ['positions'])
+        position_response = response['securitiesAccount']['positions']
+        for _, position in enumerate(position_response):
+            symbol = position['instrument']['symbol']
+            quantity = position['longQuantity']
+            positions.append(Position(symbol, quantity))
+        return positions
+
+
+    def sell(self, sell_limit):
+        print("executing {sell_limit})
