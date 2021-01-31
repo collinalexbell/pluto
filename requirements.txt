@@ -1,1 +1,2 @@
-polygon-api-client
+td-ameritrade-python-api
+alpha_vantage
