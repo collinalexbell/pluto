@@ -17,6 +17,7 @@ Go [here](https://www.alphavantage.co/) and get your free key.
 ## Usage
 `python main.py`
 
+Note: items in bold are inputs you type and press enter for
 
 <pre>
 kuberlog@pop-os:~/code/pluto$ python main.py 
