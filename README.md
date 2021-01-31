@@ -4,6 +4,7 @@ For when your broker doesn't let you set a $69,420 sell limit.
 Using free API keys, you can check the market every minute for the trigger price. If you want a faster response time, you can either pay Alpha Advantage for more throughput or you can implement another price consumer.
 
 ## Setup
+First, run `pip install -r requirements.txt`
 You need to copy `keys.py.example` to `keys.py` and fill out everyting in `<>` with your own keys.
 
 ### TD Ameritrade Key
