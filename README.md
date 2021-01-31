@@ -12,11 +12,15 @@ You can get a TD Ameritrade Key [here](https://developer.tdameritrade.com/).
 After creating an account, go to "My Apps" and create a new one. 
 The `client_id` in the key file is actually the `Consumer Key` in your app description.
 
+The credentials file must be a full path. Do not use `~`, rather use `/home/username`. If you are a winfag, I'm sorry, I can't really help you. Its a python file path, so just do a full windows path starting from `C://` I think. Look it up.
+
 ### Alpha Advantage
 Go [here](https://www.alphavantage.co/) and get your free key. 
 
 ## Usage
 `python main.py`
+
+On the first run, you will need to click the link in the terminal, then login to your TD Ameritrade account. After that, it will redirect you to a `localhost` that won't load. Just copy the link and paste it into the terminal and press enter.
 
 Note: items in bold are inputs you type and press enter for
 
