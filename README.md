@@ -18,15 +18,15 @@ Go [here](https://www.alphavantage.co/) and get your free key.
 `python main.py`
 
 
-```
+<pre>
 kuberlog@pop-os:~/code/pluto$ python main.py 
 0: <YOUR ACT NUM SHOWN HERE> @ $800.0
-Select an account index: __0__
+Select an account index: <b>0</b>
 0: MMDA1 w/ 800.0 shares
 1: GME w/ 2.0 shares
-Enter the symbol of the stock to sell limit: __GME__
-Enter the price to sell: __69420__
-Enter the shares to sell: _1_
+Enter the symbol of the stock to sell limit: <b>GME</b>
+Enter the price to sell: <b>69420</b>
+Enter the shares to sell: <b>1</b>
 SellLimit on GME of 1.0 shares at price 325.0 is set.
 starting price monitor
-```
+</pre>
