@@ -1,0 +1,4 @@
+broker = {'client_id': '<BROKER CLIENT_ID>', 
+          'redirect_uri': 'https://localhost:8080',
+          'credentials_path': '<FILE TO STORE CREDS>'}
+alpha_advantage = {'api_key': '<ALPHA ADVANTAGE KEY>'}

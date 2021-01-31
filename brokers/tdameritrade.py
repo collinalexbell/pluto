@@ -38,4 +38,27 @@ class Client:
 
 
     def sell(self, sell_limit):
-        print("executing {sell_limit})
+        print("executing {sell_limit}")
+        order_result = self.session.place_order(sell_limit.account.act_num, 
+                                 {
+                                     "orderType": "LIMIT",
+                                     "session": "NORMAL",
+                                     "duration": "DAY",
+                                     "activationPrice": sell_limit.price,
+                                     "orderStrategyType": "SINGLE",
+                                     "price": sell_limit.price,
+                                     "orderLegCollection": [
+                                         {
+                                             "instruction": "SELL",
+                                             "quantity": sell_limit.quantity,
+
+                                             "instrument": {
+                                                 "symbol": sell_limit.symbol,
+                                                 "assetType": "EQUITY"
+                                             }
+                                         }
+                                     ]
+                                 }
+                                 )
+
+        print(order_result)
